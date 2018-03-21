@@ -12,7 +12,58 @@
 		9C8C2B8C20624BCF00B14D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8C2B8A20624BCF00B14D4D /* Main.storyboard */; };
 		9C8C2B8E20624BCF00B14D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8C2B8D20624BCF00B14D4D /* Assets.xcassets */; };
 		9C8C2B9120624BCF00B14D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8C2B8F20624BCF00B14D4D /* LaunchScreen.storyboard */; };
+		F2DDA3D42062DB8D00083F06 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DDA3D22062DB8D00083F06 /* Interface.storyboard */; };
+		F2DDA3D62062DB8D00083F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DDA3D52062DB8D00083F06 /* Assets.xcassets */; };
+		F2DDA3DD2062DB8D00083F06 /* Stress reflector Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2DDA3DC2062DB8D00083F06 /* Stress reflector Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F2DDA3E22062DB8D00083F06 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDA3E12062DB8D00083F06 /* InterfaceController.swift */; };
+		F2DDA3E42062DB8D00083F06 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDA3E32062DB8D00083F06 /* ExtensionDelegate.swift */; };
+		F2DDA3E62062DB8D00083F06 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDA3E52062DB8D00083F06 /* NotificationController.swift */; };
+		F2DDA3E82062DB8D00083F06 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDA3E72062DB8D00083F06 /* ComplicationController.swift */; };
+		F2DDA3EA2062DB8D00083F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DDA3E92062DB8D00083F06 /* Assets.xcassets */; };
+		F2DDA3EF2062DB8D00083F06 /* Stress reflector.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F2DDA3D02062DB8D00083F06 /* Stress reflector.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2DDA3DE2062DB8D00083F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C8C2B7B20624BCF00B14D4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DDA3DB2062DB8D00083F06;
+			remoteInfo = "Stress reflector Extension";
+		};
+		F2DDA3ED2062DB8D00083F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C8C2B7B20624BCF00B14D4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DDA3CF2062DB8D00083F06;
+			remoteInfo = "Stress reflector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2DDA3F52062DB8D00083F06 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F2DDA3DD2062DB8D00083F06 /* Stress reflector Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDA3F72062DB8D00083F06 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F2DDA3EF2062DB8D00083F06 /* Stress reflector.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C8C2B8320624BCF00B14D4D /* legendary-waffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "legendary-waffle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +73,29 @@
 		9C8C2B8D20624BCF00B14D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C8C2B9020624BCF00B14D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C8C2B9220624BCF00B14D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DDA3D02062DB8D00083F06 /* Stress reflector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stress reflector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDA3D32062DB8D00083F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F2DDA3D52062DB8D00083F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2DDA3D72062DB8D00083F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DDA3DC2062DB8D00083F06 /* Stress reflector Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Stress reflector Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDA3E12062DB8D00083F06 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F2DDA3E32062DB8D00083F06 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F2DDA3E52062DB8D00083F06 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F2DDA3E72062DB8D00083F06 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F2DDA3E92062DB8D00083F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2DDA3EB2062DB8D00083F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DDA3EC2062DB8D00083F06 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9C8C2B8020624BCF00B14D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDA3D92062DB8D00083F06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				9C8C2B8520624BCF00B14D4D /* legendary-waffle */,
+				F2DDA3D12062DB8D00083F06 /* Stress reflector */,
+				F2DDA3E02062DB8D00083F06 /* Stress reflector Extension */,
 				9C8C2B8420624BCF00B14D4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				9C8C2B8320624BCF00B14D4D /* legendary-waffle.app */,
+				F2DDA3D02062DB8D00083F06 /* Stress reflector.app */,
+				F2DDA3DC2062DB8D00083F06 /* Stress reflector Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +138,30 @@
 			path = "legendary-waffle";
 			sourceTree = "<group>";
 		};
+		F2DDA3D12062DB8D00083F06 /* Stress reflector */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDA3D22062DB8D00083F06 /* Interface.storyboard */,
+				F2DDA3D52062DB8D00083F06 /* Assets.xcassets */,
+				F2DDA3D72062DB8D00083F06 /* Info.plist */,
+			);
+			path = "Stress reflector";
+			sourceTree = "<group>";
+		};
+		F2DDA3E02062DB8D00083F06 /* Stress reflector Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDA3E12062DB8D00083F06 /* InterfaceController.swift */,
+				F2DDA3E32062DB8D00083F06 /* ExtensionDelegate.swift */,
+				F2DDA3E52062DB8D00083F06 /* NotificationController.swift */,
+				F2DDA3E72062DB8D00083F06 /* ComplicationController.swift */,
+				F2DDA3E92062DB8D00083F06 /* Assets.xcassets */,
+				F2DDA3EB2062DB8D00083F06 /* Info.plist */,
+				F2DDA3EC2062DB8D00083F06 /* PushNotificationPayload.apns */,
+			);
+			path = "Stress reflector Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +172,51 @@
 				9C8C2B7F20624BCF00B14D4D /* Sources */,
 				9C8C2B8020624BCF00B14D4D /* Frameworks */,
 				9C8C2B8120624BCF00B14D4D /* Resources */,
+				F2DDA3F72062DB8D00083F06 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F2DDA3EE2062DB8D00083F06 /* PBXTargetDependency */,
 			);
 			name = "legendary-waffle";
 			productName = "legendary-waffle";
 			productReference = 9C8C2B8320624BCF00B14D4D /* legendary-waffle.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F2DDA3CF2062DB8D00083F06 /* Stress reflector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDA3F62062DB8D00083F06 /* Build configuration list for PBXNativeTarget "Stress reflector" */;
+			buildPhases = (
+				F2DDA3CE2062DB8D00083F06 /* Resources */,
+				F2DDA3F52062DB8D00083F06 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2DDA3DF2062DB8D00083F06 /* PBXTargetDependency */,
+			);
+			name = "Stress reflector";
+			productName = "Stress reflector";
+			productReference = F2DDA3D02062DB8D00083F06 /* Stress reflector.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F2DDA3DB2062DB8D00083F06 /* Stress reflector Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDA3F42062DB8D00083F06 /* Build configuration list for PBXNativeTarget "Stress reflector Extension" */;
+			buildPhases = (
+				F2DDA3D82062DB8D00083F06 /* Sources */,
+				F2DDA3D92062DB8D00083F06 /* Frameworks */,
+				F2DDA3DA2062DB8D00083F06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stress reflector Extension";
+			productName = "Stress reflector Extension";
+			productReference = F2DDA3DC2062DB8D00083F06 /* Stress reflector Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +229,14 @@
 				ORGANIZATIONNAME = "Martin Meincke";
 				TargetAttributes = {
 					9C8C2B8220624BCF00B14D4D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F2DDA3CF2062DB8D00083F06 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F2DDA3DB2062DB8D00083F06 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +256,8 @@
 			projectRoot = "";
 			targets = (
 				9C8C2B8220624BCF00B14D4D /* legendary-waffle */,
+				F2DDA3CF2062DB8D00083F06 /* Stress reflector */,
+				F2DDA3DB2062DB8D00083F06 /* Stress reflector Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +273,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2DDA3CE2062DB8D00083F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DDA3D62062DB8D00083F06 /* Assets.xcassets in Resources */,
+				F2DDA3D42062DB8D00083F06 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDA3DA2062DB8D00083F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DDA3EA2062DB8D00083F06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +302,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2DDA3D82062DB8D00083F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DDA3E62062DB8D00083F06 /* NotificationController.swift in Sources */,
+				F2DDA3E82062DB8D00083F06 /* ComplicationController.swift in Sources */,
+				F2DDA3E42062DB8D00083F06 /* ExtensionDelegate.swift in Sources */,
+				F2DDA3E22062DB8D00083F06 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2DDA3DF2062DB8D00083F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DDA3DB2062DB8D00083F06 /* Stress reflector Extension */;
+			targetProxy = F2DDA3DE2062DB8D00083F06 /* PBXContainerItemProxy */;
+		};
+		F2DDA3EE2062DB8D00083F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DDA3CF2062DB8D00083F06 /* Stress reflector */;
+			targetProxy = F2DDA3ED2062DB8D00083F06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9C8C2B8A20624BCF00B14D4D /* Main.storyboard */ = {
@@ -158,6 +343,14 @@
 				9C8C2B9020624BCF00B14D4D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F2DDA3D22062DB8D00083F06 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2DDA3D32062DB8D00083F06 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +493,80 @@
 			};
 			name = Release;
 		};
+		F2DDA3F02062DB8D00083F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				IBSC_MODULE = Stress_reflector_Extension;
+				INFOPLIST_FILE = "Stress reflector/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.legendary-waffle.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F2DDA3F12062DB8D00083F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				IBSC_MODULE = Stress_reflector_Extension;
+				INFOPLIST_FILE = "Stress reflector/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.legendary-waffle.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		F2DDA3F22062DB8D00083F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 397AXFHJ4Z;
+				INFOPLIST_FILE = "Stress reflector Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.legendary-waffle.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F2DDA3F32062DB8D00083F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 397AXFHJ4Z;
+				INFOPLIST_FILE = "Stress reflector Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.legendary-waffle.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +584,24 @@
 			buildConfigurations = (
 				9C8C2B9620624BCF00B14D4D /* Debug */,
 				9C8C2B9720624BCF00B14D4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDA3F42062DB8D00083F06 /* Build configuration list for PBXNativeTarget "Stress reflector Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDA3F22062DB8D00083F06 /* Debug */,
+				F2DDA3F32062DB8D00083F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDA3F62062DB8D00083F06 /* Build configuration list for PBXNativeTarget "Stress reflector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDA3F02062DB8D00083F06 /* Debug */,
+				F2DDA3F12062DB8D00083F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
