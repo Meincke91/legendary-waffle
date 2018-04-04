@@ -14,9 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Stress_reflector" customModuleProvider="target">
                     <items>
-                        <imageView height="104" alignment="left" id="5ul-6F-w0T">
-                            <color key="tintColor" red="1" green="0.46483458774254682" blue="0.33408997034242693" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </imageView>
+                        <picker height="100" alignment="left" id="Ohb-ZP-Q5n"/>
                         <button width="1" alignment="left" title="Next" id="s4A-hL-aiV">
                             <connections>
                                 <segue destination="pee-nq-3U3" kind="push" id="Obc-PH-uUb"/>
@@ -25,7 +23,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="330"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aKv-c6-F27">
