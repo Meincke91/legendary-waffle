@@ -1,16 +1,60 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Stress_reflector" customModuleProvider="target">
+                    <items>
+                        <imageView height="104" alignment="left" id="5ul-6F-w0T">
+                            <color key="tintColor" red="1" green="0.46483458774254682" blue="0.33408997034242693" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </imageView>
+                        <button width="1" alignment="left" title="Next" id="s4A-hL-aiV">
+                            <connections>
+                                <segue destination="pee-nq-3U3" kind="push" id="Obc-PH-uUb"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aKv-c6-F27">
+            <objects>
+                <controller id="pee-nq-3U3">
+                    <items>
+                        <table alignment="left" id="BKQ-qI-h02">
+                            <items>
+                                <tableRow id="XwM-4x-fqj">
+                                    <group key="rootItem" width="1" alignment="left" id="vwR-qn-ki8">
+                                        <items>
+                                            <button width="1" alignment="left" title="Button" id="Zp9-Fb-eau"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="0Tt-Nh-MJy">
+                                    <group key="rootItem" width="1" alignment="left" id="8sp-Pk-1X3">
+                                        <items>
+                                            <button width="1" alignment="left" title="Button" id="ZZB-wv-lmY"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Save" id="Jru-PD-PJL"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="510" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +75,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Stress_reflector" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
