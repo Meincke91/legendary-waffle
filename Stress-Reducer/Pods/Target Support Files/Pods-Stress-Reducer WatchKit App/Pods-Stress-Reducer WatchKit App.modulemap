@@ -1,0 +1,6 @@
+framework module Pods_Stress_Reducer_WatchKit_App {
+  umbrella header "Pods-Stress-Reducer WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}

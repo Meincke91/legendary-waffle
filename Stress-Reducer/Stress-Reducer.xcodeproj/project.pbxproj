@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FC809BEA8089B7FA2505A3 /* Pods_Stress_Reducer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6FDD065BC3C1983D067B75 /* Pods_Stress_Reducer.framework */; };
+		1EDC180A3513AB004C893204 /* Pods_Stress_Reducer_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC6A784AE8144BAB7AC8C96 /* Pods_Stress_Reducer_WatchKit_Extension.framework */; };
+		82E49A6AF6CC8E7E6123E65D /* Pods_Stress_Reducer_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9AD2803C320182FCEF4A16 /* Pods_Stress_Reducer_WatchKit_App.framework */; };
 		9C4F91172074EF50006DD10A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F91162074EF50006DD10A /* AppDelegate.swift */; };
 		9C4F91192074EF50006DD10A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F91182074EF50006DD10A /* ViewController.swift */; };
 		9C4F911C2074EF50006DD10A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F911A2074EF50006DD10A /* Main.storyboard */; };
@@ -20,6 +23,9 @@
 		9C4F913C2074EF53006DD10A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F913B2074EF53006DD10A /* ExtensionDelegate.swift */; };
 		9C4F913E2074EF53006DD10A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F913D2074EF53006DD10A /* NotificationController.swift */; };
 		9C4F91402074EF54006DD10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F913F2074EF54006DD10A /* Assets.xcassets */; };
+		9C4F9151207516DB006DD10A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F9150207516DA006DD10A /* GoogleService-Info.plist */; };
+		9C4F915620751CFF006DD10A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F915520751CFF006DD10A /* LoginViewController.swift */; };
+		9C4F915820751D0A006DD10A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F915720751D0A006DD10A /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F6FDD065BC3C1983D067B75 /* Pods_Stress_Reducer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stress_Reducer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5743747D2B8F79422C895B54 /* Pods-Stress-Reducer WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit App/Pods-Stress-Reducer WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		5C07E1C992D94706E5654609 /* Pods-Stress-Reducer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer/Pods-Stress-Reducer.debug.xcconfig"; sourceTree = "<group>"; };
+		632890C05329E99283193F73 /* Pods-Stress-Reducer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer/Pods-Stress-Reducer.release.xcconfig"; sourceTree = "<group>"; };
+		9B9AD2803C320182FCEF4A16 /* Pods_Stress_Reducer_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stress_Reducer_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4F91132074EF50006DD10A /* Stress-Reducer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stress-Reducer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4F91162074EF50006DD10A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C4F91182074EF50006DD10A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,13 +94,29 @@
 		9C4F913F2074EF54006DD10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C4F91412074EF54006DD10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C4F91422074EF54006DD10A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9C4F9150207516DA006DD10A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C4F915520751CFF006DD10A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9C4F915720751D0A006DD10A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ADDD0151124AE8379B8D0551 /* Pods-Stress-Reducer WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit App/Pods-Stress-Reducer WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		B1C9F38461BAE63A7D113403 /* Pods-Stress-Reducer WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit Extension/Pods-Stress-Reducer WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		EAC6A784AE8144BAB7AC8C96 /* Pods_Stress_Reducer_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stress_Reducer_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F739E5E5A4B406EB27306453 /* Pods-Stress-Reducer WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit Extension/Pods-Stress-Reducer WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		53E1F93B2BD39AA912E6270B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E49A6AF6CC8E7E6123E65D /* Pods_Stress_Reducer_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C4F91102074EF50006DD10A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FC809BEA8089B7FA2505A3 /* Pods_Stress_Reducer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +124,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDC180A3513AB004C893204 /* Pods_Stress_Reducer_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285E9F91002E8CA2BA7C4E1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C07E1C992D94706E5654609 /* Pods-Stress-Reducer.debug.xcconfig */,
+				632890C05329E99283193F73 /* Pods-Stress-Reducer.release.xcconfig */,
+				ADDD0151124AE8379B8D0551 /* Pods-Stress-Reducer WatchKit App.debug.xcconfig */,
+				5743747D2B8F79422C895B54 /* Pods-Stress-Reducer WatchKit App.release.xcconfig */,
+				B1C9F38461BAE63A7D113403 /* Pods-Stress-Reducer WatchKit Extension.debug.xcconfig */,
+				F739E5E5A4B406EB27306453 /* Pods-Stress-Reducer WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9C4F910A2074EF50006DD10A = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +151,8 @@
 				9C4F91292074EF52006DD10A /* Stress-Reducer WatchKit App */,
 				9C4F91382074EF53006DD10A /* Stress-Reducer WatchKit Extension */,
 				9C4F91142074EF50006DD10A /* Products */,
+				285E9F91002E8CA2BA7C4E1B /* Pods */,
+				B77CDEE917F907012182E3DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,11 +170,14 @@
 			isa = PBXGroup;
 			children = (
 				9C4F91162074EF50006DD10A /* AppDelegate.swift */,
-				9C4F91182074EF50006DD10A /* ViewController.swift */,
+				9C4F915420751CEC006DD10A /* View */,
+				9C4F915320751CE7006DD10A /* Model */,
+				9C4F915220751CBA006DD10A /* Controller */,
 				9C4F911A2074EF50006DD10A /* Main.storyboard */,
 				9C4F911D2074EF52006DD10A /* Assets.xcassets */,
 				9C4F911F2074EF52006DD10A /* LaunchScreen.storyboard */,
 				9C4F91222074EF52006DD10A /* Info.plist */,
+				9C4F9150207516DA006DD10A /* GoogleService-Info.plist */,
 			);
 			path = "Stress-Reducer";
 			sourceTree = "<group>";
@@ -159,6 +205,40 @@
 			path = "Stress-Reducer WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		9C4F915220751CBA006DD10A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C4F91182074EF50006DD10A /* ViewController.swift */,
+				9C4F915520751CFF006DD10A /* LoginViewController.swift */,
+				9C4F915720751D0A006DD10A /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C4F915320751CE7006DD10A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C4F915420751CEC006DD10A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B77CDEE917F907012182E3DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F6FDD065BC3C1983D067B75 /* Pods_Stress_Reducer.framework */,
+				9B9AD2803C320182FCEF4A16 /* Pods_Stress_Reducer_WatchKit_App.framework */,
+				EAC6A784AE8144BAB7AC8C96 /* Pods_Stress_Reducer_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,10 +246,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C4F914D2074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer" */;
 			buildPhases = (
+				E4D7961D8DA275094DF9F991 /* [CP] Check Pods Manifest.lock */,
 				9C4F910F2074EF50006DD10A /* Sources */,
 				9C4F91102074EF50006DD10A /* Frameworks */,
 				9C4F91112074EF50006DD10A /* Resources */,
 				9C4F914C2074EF54006DD10A /* Embed Watch Content */,
+				CA8197AF26981D68B577BB4F /* [CP] Embed Pods Frameworks */,
+				409E530ACFC5E060F4D529BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,8 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C4F91492074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer WatchKit App" */;
 			buildPhases = (
+				232F2D7147738264C2FEDC97 /* [CP] Check Pods Manifest.lock */,
 				9C4F91232074EF52006DD10A /* Resources */,
 				9C4F91482074EF54006DD10A /* Embed App Extensions */,
+				53E1F93B2BD39AA912E6270B /* Frameworks */,
+				883E274404B2FAF4D54653F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C4F91452074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer WatchKit Extension" */;
 			buildPhases = (
+				E58304201E0589F7701903D7 /* [CP] Check Pods Manifest.lock */,
 				9C4F91302074EF53006DD10A /* Sources */,
 				9C4F91312074EF53006DD10A /* Frameworks */,
 				9C4F91322074EF53006DD10A /* Resources */,
+				25F2617FCFEB3891449B8AA8 /* [CP] Embed Pods Frameworks */,
+				C0B4E17CFF95BD56A763CCAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +352,7 @@
 			files = (
 				9C4F91212074EF52006DD10A /* LaunchScreen.storyboard in Resources */,
 				9C4F911E2074EF52006DD10A /* Assets.xcassets in Resources */,
+				9C4F9151207516DB006DD10A /* GoogleService-Info.plist in Resources */,
 				9C4F911C2074EF50006DD10A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,13 +376,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		232F2D7147738264C2FEDC97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stress-Reducer WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25F2617FCFEB3891449B8AA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stress-Reducer WatchKit Extension/Pods-Stress-Reducer WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		409E530ACFC5E060F4D529BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stress-Reducer/Pods-Stress-Reducer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883E274404B2FAF4D54653F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stress-Reducer WatchKit App/Pods-Stress-Reducer WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0B4E17CFF95BD56A763CCAC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stress-Reducer WatchKit Extension/Pods-Stress-Reducer WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA8197AF26981D68B577BB4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stress-Reducer/Pods-Stress-Reducer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stress-Reducer/Pods-Stress-Reducer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D7961D8DA275094DF9F991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stress-Reducer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E58304201E0589F7701903D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stress-Reducer WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C4F910F2074EF50006DD10A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4F915620751CFF006DD10A /* LoginViewController.swift in Sources */,
 				9C4F91192074EF50006DD10A /* ViewController.swift in Sources */,
 				9C4F91172074EF50006DD10A /* AppDelegate.swift in Sources */,
+				9C4F915820751D0A006DD10A /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,16 +702,13 @@
 		};
 		9C4F91462074EF54006DD10A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1C9F38461BAE63A7D113403 /* Pods-Stress-Reducer WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33V3XZ752C;
 				INFOPLIST_FILE = "Stress-Reducer WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -487,16 +721,13 @@
 		};
 		9C4F91472074EF54006DD10A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F739E5E5A4B406EB27306453 /* Pods-Stress-Reducer WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33V3XZ752C;
 				INFOPLIST_FILE = "Stress-Reducer WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -509,6 +740,7 @@
 		};
 		9C4F914A2074EF54006DD10A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDD0151124AE8379B8D0551 /* Pods-Stress-Reducer WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -528,6 +760,7 @@
 		};
 		9C4F914B2074EF54006DD10A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5743747D2B8F79422C895B54 /* Pods-Stress-Reducer WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -547,15 +780,13 @@
 		};
 		9C4F914E2074EF54006DD10A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C07E1C992D94706E5654609 /* Pods-Stress-Reducer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33V3XZ752C;
 				INFOPLIST_FILE = "Stress-Reducer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -565,15 +796,13 @@
 		};
 		9C4F914F2074EF54006DD10A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632890C05329E99283193F73 /* Pods-Stress-Reducer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33V3XZ752C;
 				INFOPLIST_FILE = "Stress-Reducer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
