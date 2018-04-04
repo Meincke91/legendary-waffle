@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C4F91172074EF50006DD10A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F91162074EF50006DD10A /* AppDelegate.swift */; };
+		9C4F91192074EF50006DD10A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F91182074EF50006DD10A /* ViewController.swift */; };
+		9C4F911C2074EF50006DD10A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F911A2074EF50006DD10A /* Main.storyboard */; };
+		9C4F911E2074EF52006DD10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F911D2074EF52006DD10A /* Assets.xcassets */; };
+		9C4F91212074EF52006DD10A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F911F2074EF52006DD10A /* LaunchScreen.storyboard */; };
+		9C4F91262074EF52006DD10A /* Stress-Reducer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9C4F91252074EF52006DD10A /* Stress-Reducer WatchKit App.app */; };
+		9C4F912C2074EF52006DD10A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F912A2074EF52006DD10A /* Interface.storyboard */; };
+		9C4F912E2074EF53006DD10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F912D2074EF53006DD10A /* Assets.xcassets */; };
+		9C4F91352074EF53006DD10A /* Stress-Reducer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C4F91342074EF53006DD10A /* Stress-Reducer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C4F913A2074EF53006DD10A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F91392074EF53006DD10A /* InterfaceController.swift */; };
+		9C4F913C2074EF53006DD10A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F913B2074EF53006DD10A /* ExtensionDelegate.swift */; };
+		9C4F913E2074EF53006DD10A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F913D2074EF53006DD10A /* NotificationController.swift */; };
+		9C4F91402074EF54006DD10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F913F2074EF54006DD10A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C4F91272074EF52006DD10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C4F910B2074EF50006DD10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C4F91242074EF52006DD10A;
+			remoteInfo = "Stress-Reducer WatchKit App";
+		};
+		9C4F91362074EF53006DD10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C4F910B2074EF50006DD10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C4F91332074EF53006DD10A;
+			remoteInfo = "Stress-Reducer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C4F91482074EF54006DD10A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C4F91352074EF53006DD10A /* Stress-Reducer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F914C2074EF54006DD10A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9C4F91262074EF52006DD10A /* Stress-Reducer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9C4F91132074EF50006DD10A /* Stress-Reducer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stress-Reducer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4F91162074EF50006DD10A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C4F91182074EF50006DD10A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C4F911B2074EF50006DD10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C4F911D2074EF52006DD10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C4F91202074EF52006DD10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C4F91222074EF52006DD10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C4F91252074EF52006DD10A /* Stress-Reducer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stress-Reducer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4F912B2074EF52006DD10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9C4F912D2074EF53006DD10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C4F912F2074EF53006DD10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C4F91342074EF53006DD10A /* Stress-Reducer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Stress-Reducer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4F91392074EF53006DD10A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9C4F913B2074EF53006DD10A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9C4F913D2074EF53006DD10A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9C4F913F2074EF54006DD10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C4F91412074EF54006DD10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C4F91422074EF54006DD10A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C4F91102074EF50006DD10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F91312074EF53006DD10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C4F910A2074EF50006DD10A = {
+			isa = PBXGroup;
+			children = (
+				9C4F91152074EF50006DD10A /* Stress-Reducer */,
+				9C4F91292074EF52006DD10A /* Stress-Reducer WatchKit App */,
+				9C4F91382074EF53006DD10A /* Stress-Reducer WatchKit Extension */,
+				9C4F91142074EF50006DD10A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C4F91142074EF50006DD10A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C4F91132074EF50006DD10A /* Stress-Reducer.app */,
+				9C4F91252074EF52006DD10A /* Stress-Reducer WatchKit App.app */,
+				9C4F91342074EF53006DD10A /* Stress-Reducer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C4F91152074EF50006DD10A /* Stress-Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				9C4F91162074EF50006DD10A /* AppDelegate.swift */,
+				9C4F91182074EF50006DD10A /* ViewController.swift */,
+				9C4F911A2074EF50006DD10A /* Main.storyboard */,
+				9C4F911D2074EF52006DD10A /* Assets.xcassets */,
+				9C4F911F2074EF52006DD10A /* LaunchScreen.storyboard */,
+				9C4F91222074EF52006DD10A /* Info.plist */,
+			);
+			path = "Stress-Reducer";
+			sourceTree = "<group>";
+		};
+		9C4F91292074EF52006DD10A /* Stress-Reducer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9C4F912A2074EF52006DD10A /* Interface.storyboard */,
+				9C4F912D2074EF53006DD10A /* Assets.xcassets */,
+				9C4F912F2074EF53006DD10A /* Info.plist */,
+			);
+			path = "Stress-Reducer WatchKit App";
+			sourceTree = "<group>";
+		};
+		9C4F91382074EF53006DD10A /* Stress-Reducer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9C4F91392074EF53006DD10A /* InterfaceController.swift */,
+				9C4F913B2074EF53006DD10A /* ExtensionDelegate.swift */,
+				9C4F913D2074EF53006DD10A /* NotificationController.swift */,
+				9C4F913F2074EF54006DD10A /* Assets.xcassets */,
+				9C4F91412074EF54006DD10A /* Info.plist */,
+				9C4F91422074EF54006DD10A /* PushNotificationPayload.apns */,
+			);
+			path = "Stress-Reducer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C4F91122074EF50006DD10A /* Stress-Reducer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4F914D2074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer" */;
+			buildPhases = (
+				9C4F910F2074EF50006DD10A /* Sources */,
+				9C4F91102074EF50006DD10A /* Frameworks */,
+				9C4F91112074EF50006DD10A /* Resources */,
+				9C4F914C2074EF54006DD10A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C4F91282074EF52006DD10A /* PBXTargetDependency */,
+			);
+			name = "Stress-Reducer";
+			productName = "Stress-Reducer";
+			productReference = 9C4F91132074EF50006DD10A /* Stress-Reducer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C4F91242074EF52006DD10A /* Stress-Reducer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4F91492074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer WatchKit App" */;
+			buildPhases = (
+				9C4F91232074EF52006DD10A /* Resources */,
+				9C4F91482074EF54006DD10A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C4F91372074EF53006DD10A /* PBXTargetDependency */,
+			);
+			name = "Stress-Reducer WatchKit App";
+			productName = "Stress-Reducer WatchKit App";
+			productReference = 9C4F91252074EF52006DD10A /* Stress-Reducer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9C4F91332074EF53006DD10A /* Stress-Reducer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4F91452074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer WatchKit Extension" */;
+			buildPhases = (
+				9C4F91302074EF53006DD10A /* Sources */,
+				9C4F91312074EF53006DD10A /* Frameworks */,
+				9C4F91322074EF53006DD10A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stress-Reducer WatchKit Extension";
+			productName = "Stress-Reducer WatchKit Extension";
+			productReference = 9C4F91342074EF53006DD10A /* Stress-Reducer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C4F910B2074EF50006DD10A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Martin Meincke";
+				TargetAttributes = {
+					9C4F91122074EF50006DD10A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					9C4F91242074EF52006DD10A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					9C4F91332074EF53006DD10A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 9C4F910E2074EF50006DD10A /* Build configuration list for PBXProject "Stress-Reducer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C4F910A2074EF50006DD10A;
+			productRefGroup = 9C4F91142074EF50006DD10A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C4F91122074EF50006DD10A /* Stress-Reducer */,
+				9C4F91242074EF52006DD10A /* Stress-Reducer WatchKit App */,
+				9C4F91332074EF53006DD10A /* Stress-Reducer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C4F91112074EF50006DD10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4F91212074EF52006DD10A /* LaunchScreen.storyboard in Resources */,
+				9C4F911E2074EF52006DD10A /* Assets.xcassets in Resources */,
+				9C4F911C2074EF50006DD10A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F91232074EF52006DD10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4F912E2074EF53006DD10A /* Assets.xcassets in Resources */,
+				9C4F912C2074EF52006DD10A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F91322074EF53006DD10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4F91402074EF54006DD10A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C4F910F2074EF50006DD10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4F91192074EF50006DD10A /* ViewController.swift in Sources */,
+				9C4F91172074EF50006DD10A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F91302074EF53006DD10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4F913E2074EF53006DD10A /* NotificationController.swift in Sources */,
+				9C4F913C2074EF53006DD10A /* ExtensionDelegate.swift in Sources */,
+				9C4F913A2074EF53006DD10A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C4F91282074EF52006DD10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C4F91242074EF52006DD10A /* Stress-Reducer WatchKit App */;
+			targetProxy = 9C4F91272074EF52006DD10A /* PBXContainerItemProxy */;
+		};
+		9C4F91372074EF53006DD10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C4F91332074EF53006DD10A /* Stress-Reducer WatchKit Extension */;
+			targetProxy = 9C4F91362074EF53006DD10A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C4F911A2074EF50006DD10A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C4F911B2074EF50006DD10A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C4F911F2074EF52006DD10A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C4F91202074EF52006DD10A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9C4F912A2074EF52006DD10A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C4F912B2074EF52006DD10A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C4F91432074EF54006DD10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C4F91442074EF54006DD10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C4F91462074EF54006DD10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				INFOPLIST_FILE = "Stress-Reducer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9C4F91472074EF54006DD10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				INFOPLIST_FILE = "Stress-Reducer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9C4F914A2074EF54006DD10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				IBSC_MODULE = Stress_Reducer_WatchKit_Extension;
+				INFOPLIST_FILE = "Stress-Reducer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9C4F914B2074EF54006DD10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				IBSC_MODULE = Stress_Reducer_WatchKit_Extension;
+				INFOPLIST_FILE = "Stress-Reducer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9C4F914E2074EF54006DD10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				INFOPLIST_FILE = "Stress-Reducer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C4F914F2074EF54006DD10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33V3XZ752C;
+				INFOPLIST_FILE = "Stress-Reducer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C4F910E2074EF50006DD10A /* Build configuration list for PBXProject "Stress-Reducer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4F91432074EF54006DD10A /* Debug */,
+				9C4F91442074EF54006DD10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C4F91452074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4F91462074EF54006DD10A /* Debug */,
+				9C4F91472074EF54006DD10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C4F91492074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4F914A2074EF54006DD10A /* Debug */,
+				9C4F914B2074EF54006DD10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C4F914D2074EF54006DD10A /* Build configuration list for PBXNativeTarget "Stress-Reducer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4F914E2074EF54006DD10A /* Debug */,
+				9C4F914F2074EF54006DD10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C4F910B2074EF50006DD10A /* Project object */;
+}
