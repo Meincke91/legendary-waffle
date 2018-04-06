@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,15 +14,21 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Stress_Reducer_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="eDa-0L-fNA">
+                        <label alignment="left" text="How stressed did you feel?" id="gEP-oy-oU1"/>
+                        <picker height="100" alignment="left" id="6Zy-W5-Gyq">
                             <connections>
-                                <action selector="next_press" destination="AgC-eL-Hgc" id="mbR-mA-d2S"/>
+                                <action selector="setStressLevel:" destination="AgC-eL-Hgc" id="Ik7-3E-SFm"/>
                             </connections>
-                        </button>
+                        </picker>
+                        <button width="1" alignment="left" title="Next" id="OVv-di-sb5" userLabel="Next"/>
                     </items>
+                    <connections>
+                        <outlet property="stressLevelLabel" destination="gEP-oy-oU1" id="nuH-NP-ouq"/>
+                        <outlet property="stressLevelPicker" destination="6Zy-W5-Gyq" id="Jyr-qf-T75"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.69230769230771" y="344.79487179487182"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
