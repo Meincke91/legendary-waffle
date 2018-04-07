@@ -15,7 +15,7 @@ class StressKindController: WKInterfaceController {
     //MARK: Properties
     let kindsOfStress = ["High workload", "Fear of failure", "Making choices", "Missing structure", "Social problems", "Pressure", "Other"]
     var selectedKinds: Array<Bool>?
-    var defaultColor: UIColor?
+    let defaultLabelColor = UIColor (red: (34/255.0), green: (34/255.0), blue: (35/255.0), alpha: 1.0)
     @IBOutlet var table: WKInterfaceTable!
     
     override func awake(withContext context: Any?) {
@@ -43,7 +43,7 @@ class StressKindController: WKInterfaceController {
         if (selectedKinds![rowIndex]) {
             row.group.setBackgroundColor(UIColor .green)
         } else {
-            row.group.setBackgroundColor(UIColor (red: (34/255.0), green: (34/255.0), blue: (35/255.0), alpha: 1.0))
+            row.group.setBackgroundColor(defaultLabelColor)
         }
     }
     
@@ -57,4 +57,8 @@ class StressKindController: WKInterfaceController {
         }
     }
     
+    //MARK: Actions
+    @IBAction func didSave() {
+        // Save data to database.
+    }
 }

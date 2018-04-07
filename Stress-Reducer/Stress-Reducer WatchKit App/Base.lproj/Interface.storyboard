@@ -12,9 +12,14 @@
         <!--Success Controller-->
         <scene sceneID="pSE-eQ-kim">
             <objects>
-                <controller id="HrG-iq-wEZ" userLabel="Success Controller"/>
+                <controller id="HrG-iq-wEZ" userLabel="Success Controller">
+                    <items>
+                        <imageView width="76" height="76" alignment="center" verticalAlignment="center" image="successGreen" id="c5m-JC-uzI"/>
+                        <label alignment="center" verticalAlignment="bottom" text="Your data is saved" id="Zd4-Ex-Nig"/>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="998" y="337"/>
+            <point key="canvasLocation" x="997.33333333333337" y="336.94871794871796"/>
         </scene>
         <!--Stress Level Controller-->
         <scene sceneID="aou-V4-d1y">
@@ -62,9 +67,11 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <separator alignment="left" id="uoq-Zp-X7V"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Save" id="lau-p0-6PW">
                             <connections>
-                                <segue destination="HrG-iq-wEZ" kind="push" id="mGD-Sk-gA5"/>
+                                <action selector="didSave" destination="sWP-2x-o7x" id="BoQ-2N-tMq"/>
+                                <segue destination="HrG-iq-wEZ" kind="modal" id="9MU-Cy-RcM"/>
                             </connections>
                         </button>
                     </items>
