@@ -10,8 +10,8 @@
     
     "WatchKit Simulator Actions": [
         {
-            "title": "First Button",
-            "identifier": "firstButtonAction"
+            "title": "Describe",
+            "identifier": "describeButtonAction"
         }
     ],
     

@@ -204,7 +204,7 @@
         <!--Settings Table View Controller-->
         <scene sceneID="XQE-Lq-eUZ">
             <objects>
-                <tableViewController title="Settings Table View Controller" id="8XT-f8-Jq8" sceneMemberID="viewController">
+                <tableViewController title="Settings Table View Controller" id="8XT-f8-Jq8" customClass="SettingsTableViewController" customModule="Stress_Reducer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Drt-ZV-rns">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

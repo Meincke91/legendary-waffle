@@ -25,8 +25,9 @@
 		9C4F915620751CFF006DD10A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F915520751CFF006DD10A /* LoginViewController.swift */; };
 		9C4F915820751D0A006DD10A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F915720751D0A006DD10A /* RegisterViewController.swift */; };
 		F233337A2078D609001D0AD0 /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23333792078D609001D0AD0 /* SuccessController.swift */; };
-		F233338220792BF3001D0AD0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233338120792BF3001D0AD0 /* SettingsViewController.swift */; };
 		F233338420792C03001D0AD0 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233338320792C03001D0AD0 /* OverviewViewController.swift */; };
+		F23333862079358A001D0AD0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23333852079358A001D0AD0 /* SettingsTableViewController.swift */; };
+		F2333388207936EC001D0AD0 /* HRVInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2333387207936EC001D0AD0 /* HRVInterfaceController.swift */; };
 		F2391F802077BF2700B13633 /* StressKindRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2391F7F2077BF2700B13633 /* StressKindRowController.swift */; };
 		F29F872620778B9E004C1809 /* StressKindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F872520778B9E004C1809 /* StressKindController.swift */; };
 /* End PBXBuildFile section */
@@ -102,8 +103,9 @@
 		B1C9F38461BAE63A7D113403 /* Pods-Stress-Reducer WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit Extension/Pods-Stress-Reducer WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		EAC6A784AE8144BAB7AC8C96 /* Pods_Stress_Reducer_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stress_Reducer_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23333792078D609001D0AD0 /* SuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
-		F233338120792BF3001D0AD0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F233338320792C03001D0AD0 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		F23333852079358A001D0AD0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		F2333387207936EC001D0AD0 /* HRVInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVInterfaceController.swift; sourceTree = "<group>"; };
 		F2391F7F2077BF2700B13633 /* StressKindRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressKindRowController.swift; sourceTree = "<group>"; };
 		F29F872520778B9E004C1809 /* StressKindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressKindController.swift; sourceTree = "<group>"; };
 		F739E5E5A4B406EB27306453 /* Pods-Stress-Reducer WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit Extension/Pods-Stress-Reducer WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				F29F872520778B9E004C1809 /* StressKindController.swift */,
 				F2391F7F2077BF2700B13633 /* StressKindRowController.swift */,
 				F23333792078D609001D0AD0 /* SuccessController.swift */,
+				F2333387207936EC001D0AD0 /* HRVInterfaceController.swift */,
 			);
 			path = "Stress-Reducer WatchKit Extension";
 			sourceTree = "<group>";
@@ -218,8 +221,8 @@
 			children = (
 				9C4F915520751CFF006DD10A /* LoginViewController.swift */,
 				9C4F915720751D0A006DD10A /* RegisterViewController.swift */,
-				F233338120792BF3001D0AD0 /* SettingsViewController.swift */,
 				F233338320792C03001D0AD0 /* OverviewViewController.swift */,
+				F23333852079358A001D0AD0 /* SettingsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -535,9 +538,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C4F915620751CFF006DD10A /* LoginViewController.swift in Sources */,
+				F23333862079358A001D0AD0 /* SettingsTableViewController.swift in Sources */,
 				9C4F91172074EF50006DD10A /* AppDelegate.swift in Sources */,
 				9C4F915820751D0A006DD10A /* RegisterViewController.swift in Sources */,
-				F233338220792BF3001D0AD0 /* SettingsViewController.swift in Sources */,
 				F233338420792C03001D0AD0 /* OverviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +552,7 @@
 				9C4F913E2074EF53006DD10A /* NotificationController.swift in Sources */,
 				9C4F913C2074EF53006DD10A /* ExtensionDelegate.swift in Sources */,
 				9C4F913A2074EF53006DD10A /* StressLevelController.swift in Sources */,
+				F2333388207936EC001D0AD0 /* HRVInterfaceController.swift in Sources */,
 				F233337A2078D609001D0AD0 /* SuccessController.swift in Sources */,
 				F2391F802077BF2700B13633 /* StressKindRowController.swift in Sources */,
 				F29F872620778B9E004C1809 /* StressKindController.swift in Sources */,

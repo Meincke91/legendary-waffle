@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xpg-8E-zeK">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,8 +12,13 @@
         <!--Success Controller-->
         <scene sceneID="pSE-eQ-kim">
             <objects>
-                <controller fullScreen="YES" id="HrG-iq-wEZ" userLabel="Success Controller">
+                <controller identifier="SuccessController" fullScreen="YES" id="HrG-iq-wEZ" userLabel="Success Controller">
                     <items>
+                        <button width="1" alignment="left" title="Go to main menu" id="j1x-m2-hSf">
+                            <connections>
+                                <segue destination="Xpg-8E-zeK" kind="modal" id="i8C-mQ-ubC"/>
+                            </connections>
+                        </button>
                         <imageView width="76" height="76" alignment="center" verticalAlignment="center" image="successGreen" id="c5m-JC-uzI"/>
                         <label alignment="center" verticalAlignment="bottom" text="Your data is saved" id="Zd4-Ex-Nig"/>
                     </items>
@@ -21,10 +26,22 @@
             </objects>
             <point key="canvasLocation" x="997.33333333333337" y="336.94871794871796"/>
         </scene>
-        <!--Stress Level Controller-->
+        <!--Detect Heartbeat-->
+        <scene sceneID="FSJ-OL-mNr">
+            <objects>
+                <controller identifier="HRVInterfaceController" title="Detect Heartbeat" id="Xpg-8E-zeK" customClass="HRVInterfaceController" customModule="Stress_Reducer_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="We need to mesuare your heartbeat, to detect situations under stress." numberOfLines="5" id="wC8-K0-Z3e"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Detect heartbeat" id="11r-ti-5kF"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="11"/>
+        </scene>
+        <!--StressLevelController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="StressLevelController" customModule="Stress_Reducer_WatchKit_Extension">
+                <controller identifier="StressLevelController" id="AgC-eL-Hgc" customClass="StressLevelController" customModule="Stress_Reducer_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="How stressed did you feel?" textAlignment="center" numberOfLines="2" id="gEP-oy-oU1"/>
                         <picker height="89" alignment="left" id="6Zy-W5-Gyq">
@@ -53,10 +70,7 @@
                     <items>
                         <label alignment="left" text="Did you just feel stressed?" numberOfLines="2" id="yBu-C5-b8K"/>
                         <separator alignment="left" id="8wl-pn-ei5"/>
-                        <label alignment="left" numberOfLines="4" id="GHX-SL-6jd">
-                            <string key="text">If yes, please describe how you felt.
-We are here to help!</string>
-                        </label>
+                        <label alignment="left" text="If yes, please describe how you felt." numberOfLines="4" id="GHX-SL-6jd"/>
                     </items>
                     <notificationCategory key="notificationCategory" id="nmD-db-V9j"/>
                     <connections>
@@ -66,10 +80,10 @@ We are here to help!</string>
             </objects>
             <point key="canvasLocation" x="220" y="630"/>
         </scene>
-        <!--Stress Kind Controller-->
+        <!--StressKindController-->
         <scene sceneID="aD7-Gq-eU0">
             <objects>
-                <controller id="sWP-2x-o7x" customClass="StressKindController" customModule="Stress_Reducer_WatchKit_Extension">
+                <controller identifier="StressKindController" id="sWP-2x-o7x" customClass="StressKindController" customModule="Stress_Reducer_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="What kind of stress did you experience?" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.80000000000000004" id="ZWq-Ef-9It"/>
                         <table alignment="left" id="TR2-em-4gd">
