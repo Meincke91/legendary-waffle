@@ -12,7 +12,7 @@
         <!--Success Controller-->
         <scene sceneID="pSE-eQ-kim">
             <objects>
-                <controller id="HrG-iq-wEZ" userLabel="Success Controller">
+                <controller fullScreen="YES" id="HrG-iq-wEZ" userLabel="Success Controller">
                     <items>
                         <imageView width="76" height="76" alignment="center" verticalAlignment="center" image="successGreen" id="c5m-JC-uzI"/>
                         <label alignment="center" verticalAlignment="bottom" text="Your data is saved" id="Zd4-Ex-Nig"/>
@@ -45,6 +45,26 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="219.69230769230771" y="336.94871794871796"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="YnR-KS-S3H">
+            <objects>
+                <notificationController id="3fT-Fb-ph5">
+                    <items>
+                        <label alignment="left" text="Did you just feel stressed?" numberOfLines="2" id="yBu-C5-b8K"/>
+                        <separator alignment="left" id="8wl-pn-ei5"/>
+                        <label alignment="left" numberOfLines="4" id="GHX-SL-6jd">
+                            <string key="text">If yes, please describe how you felt.
+We are here to help!</string>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="nmD-db-V9j"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="yBu-C5-b8K" id="scD-Ja-YOg"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="630"/>
         </scene>
         <!--Stress Kind Controller-->
         <scene sceneID="aD7-Gq-eU0">
@@ -81,29 +101,6 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="602" y="337"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
-                    <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
-                    </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
-                    <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                    </connections>
-                </notificationController>
-            </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Stress_Reducer_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="602" y="643"/>
         </scene>
     </scenes>
 </document>
