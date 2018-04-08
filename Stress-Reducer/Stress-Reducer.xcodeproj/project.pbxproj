@@ -24,6 +24,7 @@
 		9C4F9151207516DB006DD10A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C4F9150207516DA006DD10A /* GoogleService-Info.plist */; };
 		9C4F915620751CFF006DD10A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F915520751CFF006DD10A /* LoginViewController.swift */; };
 		9C4F915820751D0A006DD10A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4F915720751D0A006DD10A /* RegisterViewController.swift */; };
+		F226F283207A75DD009845CD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F226F282207A75DD009845CD /* Launch Screen.storyboard */; };
 		F233337A2078D609001D0AD0 /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23333792078D609001D0AD0 /* SuccessController.swift */; };
 		F233338420792C03001D0AD0 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233338320792C03001D0AD0 /* OverviewViewController.swift */; };
 		F23333862079358A001D0AD0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23333852079358A001D0AD0 /* SettingsTableViewController.swift */; };
@@ -102,6 +103,7 @@
 		ADDD0151124AE8379B8D0551 /* Pods-Stress-Reducer WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit App/Pods-Stress-Reducer WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		B1C9F38461BAE63A7D113403 /* Pods-Stress-Reducer WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stress-Reducer WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stress-Reducer WatchKit Extension/Pods-Stress-Reducer WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		EAC6A784AE8144BAB7AC8C96 /* Pods_Stress_Reducer_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stress_Reducer_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F226F282207A75DD009845CD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F23333792078D609001D0AD0 /* SuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
 		F233338320792C03001D0AD0 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		F23333852079358A001D0AD0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				9C4F911D2074EF52006DD10A /* Assets.xcassets */,
 				9C4F91222074EF52006DD10A /* Info.plist */,
 				9C4F9150207516DA006DD10A /* GoogleService-Info.plist */,
+				F226F282207A75DD009845CD /* Launch Screen.storyboard */,
 			);
 			path = "Stress-Reducer";
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			files = (
 				9C4F911E2074EF52006DD10A /* Assets.xcassets in Resources */,
 				9C4F9151207516DB006DD10A /* GoogleService-Info.plist in Resources */,
+				F226F283207A75DD009845CD /* Launch Screen.storyboard in Resources */,
 				9C4F911C2074EF50006DD10A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -799,8 +803,9 @@
 			baseConfigurationReference = 5C07E1C992D94706E5654609 /* Pods-Stress-Reducer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33V3XZ752C;
+				DEVELOPMENT_TEAM = 397AXFHJ4Z;
 				INFOPLIST_FILE = "Stress-Reducer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -808,6 +813,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -818,8 +824,9 @@
 			baseConfigurationReference = 632890C05329E99283193F73 /* Pods-Stress-Reducer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33V3XZ752C;
+				DEVELOPMENT_TEAM = 397AXFHJ4Z;
 				INFOPLIST_FILE = "Stress-Reducer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -827,6 +834,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.dtu.Stress-Reducer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

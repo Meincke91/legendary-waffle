@@ -29,11 +29,12 @@ class HRVInterfaceController: WKInterfaceController {
     }
 
     override func handleAction(withIdentifier identifier: String?, forRemoteNotification remoteNotification: [AnyHashable : Any]) {
+        // Go to view for describing stressed situation
         switch identifier {
-        case "describeButtonAction"?:
-            WKInterfaceController.reloadRootPageControllers(withNames: ["StressLevelController"], contexts: ["StressLevelController"], orientation: WKPageOrientation .horizontal, pageIndex: 0)
-        default:
-            break
+            case "describeButtonAction"?:
+                WKInterfaceController.reloadRootPageControllers(withNames: ["StressLevelController"], contexts: ["StressLevelController"], orientation: WKPageOrientation .horizontal, pageIndex: 0)
+            default:
+                break
         }
     }
 }
