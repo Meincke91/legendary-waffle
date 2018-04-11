@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xpg-8E-zeK">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,43 +9,112 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <!--Success Controller-->
+        <scene sceneID="pSE-eQ-kim">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Stress_Reducer_WatchKit_App" customModuleProvider="target">
+                <controller identifier="SuccessController" fullScreen="YES" id="HrG-iq-wEZ" userLabel="Success Controller">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="eDa-0L-fNA">
+                        <button width="1" alignment="left" title="Go to main menu" id="j1x-m2-hSf">
                             <connections>
-                                <action selector="next_press" destination="AgC-eL-Hgc" id="mbR-mA-d2S"/>
+                                <segue destination="Xpg-8E-zeK" kind="modal" id="i8C-mQ-ubC"/>
                             </connections>
                         </button>
+                        <imageView width="76" height="76" alignment="center" verticalAlignment="center" image="successGreen" id="c5m-JC-uzI"/>
+                        <label alignment="center" verticalAlignment="bottom" text="Your data is saved" id="Zd4-Ex-Nig"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="997.33333333333337" y="336.94871794871796"/>
+        </scene>
+        <!--Detect Heartbeat-->
+        <scene sceneID="FSJ-OL-mNr">
+            <objects>
+                <controller identifier="HRVInterfaceController" title="Detect Heartbeat" id="Xpg-8E-zeK" customClass="HRVInterfaceController" customModule="Stress_Reducer_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="We need to mesuare your heartbeat, to detect situations under stress." numberOfLines="5" id="wC8-K0-Z3e"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Detect heartbeat" id="11r-ti-5kF"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="11"/>
+        </scene>
+        <!--StressLevelController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="StressLevelController" id="AgC-eL-Hgc" customClass="StressLevelController" customModule="Stress_Reducer_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="How stressed did you feel?" textAlignment="center" numberOfLines="2" id="gEP-oy-oU1"/>
+                        <picker height="89" alignment="left" id="6Zy-W5-Gyq">
+                            <connections>
+                                <action selector="setStressLevel:" destination="AgC-eL-Hgc" id="Q8A-lW-YwZ"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="OVv-di-sb5" userLabel="Next">
+                            <connections>
+                                <segue destination="sWP-2x-o7x" kind="push" id="Gsu-m0-cX3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="6Zy-W5-Gyq" id="LgC-Jk-Z4i"/>
+                        <outlet property="stressLevelTitel" destination="gEP-oy-oU1" id="kfU-ul-bwp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="336.94871794871796"/>
         </scene>
         <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <scene sceneID="YnR-KS-S3H">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <notificationController id="3fT-Fb-ph5">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Did you just feel stressed?" numberOfLines="2" id="yBu-C5-b8K"/>
+                        <separator alignment="left" id="8wl-pn-ei5"/>
+                        <label alignment="left" text="If yes, please describe how you felt." numberOfLines="4" id="GHX-SL-6jd"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" id="nmD-db-V9j"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="notificationAlertLabel" destination="yBu-C5-b8K" id="scD-Ja-YOg"/>
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="220" y="630"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--StressKindController-->
+        <scene sceneID="aD7-Gq-eU0">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Stress_Reducer_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="StressKindController" id="sWP-2x-o7x" customClass="StressKindController" customModule="Stress_Reducer_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="What kind of stress did you experience?" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.80000000000000004" id="ZWq-Ef-9It"/>
+                        <table alignment="left" id="TR2-em-4gd">
+                            <items>
+                                <tableRow identifier="StressKindRowController" id="4uC-b8-xv5" userLabel="Stress Kind Row Controller" customClass="StressKindRowController" customModule="Stress_Reducer_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="k7K-Sn-fG4">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Label" id="qiK-iP-QGY"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="group" destination="k7K-Sn-fG4" id="2Me-EE-HSq"/>
+                                        <outlet property="label" destination="qiK-iP-QGY" id="6gc-5L-mUg"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <separator alignment="left" id="uoq-Zp-X7V"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Save" id="lau-p0-6PW">
+                            <connections>
+                                <action selector="didSave" destination="sWP-2x-o7x" id="BoQ-2N-tMq"/>
+                                <segue destination="HrG-iq-wEZ" kind="modal" id="9MU-Cy-RcM"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="TR2-em-4gd" id="iwf-qh-Hv0"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="602" y="337"/>
         </scene>
     </scenes>
 </document>
