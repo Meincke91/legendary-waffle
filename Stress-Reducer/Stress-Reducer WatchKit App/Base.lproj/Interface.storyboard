@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xpg-8E-zeK">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,15 +12,16 @@
         <!--Success Controller-->
         <scene sceneID="pSE-eQ-kim">
             <objects>
-                <controller identifier="SuccessController" fullScreen="YES" id="HrG-iq-wEZ" userLabel="Success Controller">
+                <controller identifier="SuccessController" fullScreen="YES" id="HrG-iq-wEZ" userLabel="Success Controller" customClass="SuccessController" customModule="Stress_Reducer_WatchKit_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Go to main menu" id="j1x-m2-hSf">
+                        <imageView width="76" height="76" alignment="center" verticalAlignment="center" image="successGreen" id="c5m-JC-uzI"/>
+                        <label alignment="center" text="Your data is saved" id="Zd4-Ex-Nig"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Dismiss" id="j1x-m2-hSf">
                             <connections>
-                                <segue destination="Xpg-8E-zeK" kind="modal" id="i8C-mQ-ubC"/>
+                                <action selector="didDismiss" destination="HrG-iq-wEZ" id="LGk-fc-mqh"/>
+                                <segue destination="AgC-eL-Hgc" kind="modal" id="dUw-J3-Txl"/>
                             </connections>
                         </button>
-                        <imageView width="76" height="76" alignment="center" verticalAlignment="center" image="successGreen" id="c5m-JC-uzI"/>
-                        <label alignment="center" verticalAlignment="bottom" text="Your data is saved" id="Zd4-Ex-Nig"/>
                     </items>
                 </controller>
             </objects>
@@ -32,7 +33,11 @@
                 <controller identifier="HRVInterfaceController" title="Detect Heartbeat" id="Xpg-8E-zeK" customClass="HRVInterfaceController" customModule="Stress_Reducer_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="We need to mesuare your heartbeat, to detect situations under stress." numberOfLines="5" id="wC8-K0-Z3e"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Detect heartbeat" id="11r-ti-5kF"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Detect HRV" id="11r-ti-5kF">
+                            <connections>
+                                <action selector="DetectHRV" destination="Xpg-8E-zeK" id="XdE-Rz-zd4"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -51,7 +56,7 @@
                         </picker>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="OVv-di-sb5" userLabel="Next">
                             <connections>
-                                <segue destination="sWP-2x-o7x" kind="push" id="Gsu-m0-cX3"/>
+                                <action selector="didNext" destination="AgC-eL-Hgc" id="khk-14-Ec6"/>
                             </connections>
                         </button>
                     </items>
@@ -104,8 +109,7 @@
                         <separator alignment="left" id="uoq-Zp-X7V"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Save" id="lau-p0-6PW">
                             <connections>
-                                <action selector="didSave" destination="sWP-2x-o7x" id="BoQ-2N-tMq"/>
-                                <segue destination="HrG-iq-wEZ" kind="modal" id="9MU-Cy-RcM"/>
+                                <action selector="didSave" destination="sWP-2x-o7x" id="lfC-Ym-YUN"/>
                             </connections>
                         </button>
                     </items>

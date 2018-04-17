@@ -16,6 +16,7 @@ class StressLevelController: WKInterfaceController {
     @IBOutlet var stressLevelTitel: WKInterfaceLabel!
     @IBOutlet var picker: WKInterfacePicker!
     var pickerItems: Array<WKPickerItem>?
+    var selectedItem: Int?
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -42,6 +43,11 @@ class StressLevelController: WKInterfaceController {
     
     //MARK: Actions
     @IBAction func setStressLevel(_ value: Int) {
-        //Save selected value
+        // Save selected value
+        selectedItem = value + 1
+    }
+    
+    @IBAction func didNext() {
+        presentController(withName: "StressKindController", context: selectedItem)
     }
 }

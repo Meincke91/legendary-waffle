@@ -13,6 +13,7 @@ target 'Stress-Reducer' do
     pod 'Firebase/Database'
     pod 'SVProgressHUD'
     pod 'ChameleonFramework'
+    pod 'Alamofire', '~> 4.7'
 end
 
 post_install do |installer|
@@ -35,4 +36,5 @@ target 'Stress-Reducer WatchKit Extension' do
   use_frameworks!
 
   # Pods for Stress-Reducer WatchKit Extension
+  pod 'Alamofire', '~> 4.7'
 end

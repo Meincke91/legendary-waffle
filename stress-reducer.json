@@ -1,0 +1,16 @@
+{
+  "userObservations": [
+    {
+      "level": "1",
+      "type": "High Workload",
+      "timestamp": null,
+      "location": null 
+    }
+  ],
+  "measuredObservations": [
+    {
+      "rr": "1000",
+      "timestamp": null
+    }
+  ]
+}

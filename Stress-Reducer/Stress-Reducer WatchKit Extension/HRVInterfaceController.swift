@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import HealthKit
 import Foundation
 
 
@@ -37,4 +38,14 @@ class HRVInterfaceController: WKInterfaceController {
                 break
         }
     }
+    
+    /*
+    @IBAction func DetectHRV() {
+        if HKHealthStore.isHealthDataAvailable() {
+            // add code to use HealthKit here...
+            let healthStore = HKHealthStore()
+            heartRateVariabilitySDNN
+        }
+    }
+    */
 }
