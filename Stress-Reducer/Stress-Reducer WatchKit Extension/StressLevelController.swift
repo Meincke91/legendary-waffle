@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import Alamofire
 
 
 class StressLevelController: WKInterfaceController {
@@ -16,7 +17,7 @@ class StressLevelController: WKInterfaceController {
     @IBOutlet var stressLevelTitel: WKInterfaceLabel!
     @IBOutlet var picker: WKInterfacePicker!
     var pickerItems: Array<WKPickerItem>?
-    var selectedItem: Int?
+    var selectedItem = 1
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -41,6 +42,24 @@ class StressLevelController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    func saveToDB() {
+        let firebaseUrl = "https://stress-reducer.firebaseio.com/userObservations.json"
+        
+        let now = Date()
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone.current
+        formatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
+        let dateString = formatter.string(from: now)
+        
+        let parameters: Parameters = [
+            "level": "\(selectedItem)",
+            "timestamp": "\(dateString)"
+        ]
+        
+        // Post data to firebase database
+        Alamofire.request(firebaseUrl, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+    }
+    
     //MARK: Actions
     @IBAction func setStressLevel(_ value: Int) {
         // Save selected value
@@ -48,6 +67,11 @@ class StressLevelController: WKInterfaceController {
     }
     
     @IBAction func didNext() {
-        presentController(withName: "StressKindController", context: selectedItem)
+        if (selectedItem < 3) {
+            saveToDB()
+            presentController(withName: "SuccessController", context: [])
+        } else {
+            presentController(withName: "StressKindController", context: selectedItem)
+        }
     }
 }

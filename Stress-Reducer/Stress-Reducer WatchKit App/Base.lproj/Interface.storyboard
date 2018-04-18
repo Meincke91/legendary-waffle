@@ -75,7 +75,7 @@
                     <items>
                         <label alignment="left" text="Did you just feel stressed?" numberOfLines="2" id="yBu-C5-b8K"/>
                         <separator alignment="left" id="8wl-pn-ei5"/>
-                        <label alignment="left" text="If yes, please describe how you felt." numberOfLines="4" id="GHX-SL-6jd"/>
+                        <label alignment="left" text="Please desribe how you feel" numberOfLines="4" id="GHX-SL-6jd"/>
                     </items>
                     <notificationCategory key="notificationCategory" id="nmD-db-V9j"/>
                     <connections>
